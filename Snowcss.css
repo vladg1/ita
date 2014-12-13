@@ -1,0 +1,462 @@
+*{
+margin: auto;
+padding: auto;
+}
+#m{
+	padding: 23px;
+	float: center;
+}
+#p1{padding: 66;
+	
+}
+
+#text{
+	text-align: left;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#time{
+   height: 15px;
+   width: 900px;
+   text-align: center;
+   color: #33CCFF;
+}
+
+.stancepoza{
+	padding-left: 60px;
+}
+
+
+.text12{
+	padding-top: 550px; 
+	padding-left: 25px;
+	padding-right: 15px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.bindtext{
+	padding-left: 20px;
+	padding-top: 30px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.ltrtext{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-right: 14px;
+}
+
+.snowpic1{
+	float: right;
+	padding-right: 49px;
+	padding-top: 55px;
+	padding-left: 10px;
+
+}
+
+.snowpic2{
+	float: left;
+	padding-left: 49px;
+	padding-top: 15px;
+	border-radius: 15px;
+
+}
+
+.ltrpoza{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#poza{
+	float: center;
+
+	margin-bottom: 50px;
+        
+}
+
+#poza2{
+		padding-left: 130px;
+
+
+}
+
+#textalaign{
+    text-align: center;
+}
+
+#asta{
+	float: right;
+	width: 270;
+	padding: 25px;
+}
+
+#aia{
+	float: left;
+	padding: 25px;
+	width: 350px;
+}
+
+.snowfest2{
+	padding-right: 35px;
+	padding-left: 10px;
+}
+
+#snowfest{
+	float: right;
+	width: 700px;
+	height: 355px;
+	padding: 5px;
+	border-radius: 15px;
+}
+#id{
+	width: 100%;
+	opacity: 0.6;
+	height: 161px;
+	padding-left: 170px;
+	
+}
+
+#unu{
+	padding: 12px;
+	margin-top: 4px;
+}
+
+.picture {
+	opacity:0.5;
+	float: left;
+	border: none;
+}
+#signup{
+	padding: 30px;
+        float: left;
+}
+
+#cur{
+    float: none;
+}
+
+
+#b{
+	width: 48px;
+	height: 48px;
+	position: relative;
+	padding: 	10px;
+}
+
+#bla{
+	padding: 10px;
+	margin: 6px;
+}
+
+#header{
+	width: 900px;
+	height: 200px;
+
+}
+#formdiv{
+	float: left;
+}
+
+#caca2{
+	float: right;
+	padding-top: 100px;
+	padding-right: 32px;
+}
+
+label {
+    
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    padding-bottom: 20px;
+    width: 30px;
+    
+}
+
+#contact{
+	padding: 45px;
+        display: inline-block;
+        margin: 0 auto;
+        
+}
+/* Elegant Aero */
+.elegant-aero {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 12px;
+    -webkit-box-shadow: #868686 0 0px 10px -1px;
+    font: 12px "Comic Sans MS", cursive, sans-serif;
+    color: #008080;
+}
+
+
+
+
+.elegant-aero label>span {
+    float: left;
+    margin-top: 10px;
+    
+}
+.elegant-aero label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.elegant-aero label>span {
+    float: left;
+    width: 100px;
+    text-align: left;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.elegant-aero input[type="text"], .elegant-aero input[type="email"], .elegant-aero textarea, .elegant-aero select {
+    color: #33CCFF;
+    width: 60%;
+    padding: 5px 4px 0px 5px;
+    padding: 25px;
+    border: 1px solid #CEE2E7;
+    border-radius: 10px;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
+    font: 200 24px/24px Arial, Helvetica, sans-serif;
+     font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.elegant-aero textarea{
+    height:100px;
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.elegant-aero .button{
+    padding-left: 25px;
+    float: center;
+    opacity: 0.9;
+    border: none;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #33CCFF;
+  
+    margin-left: .5em;
+    
+}
+.button {
+    padding-left: 90px;
+    color: #00FFFF;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+   
+}
+.comment{
+	padding-left: 25px;
+}
+
+.stanga{
+	float: left;
+
+}
+
+.dreapta{
+	float: right;
+	padding-left: 200px;
+}
+
+
+
+
+
+.sign {
+    width: 400px;
+    margin-right: auto;
+    float: left;
+    margin-left: auto;
+    padding: 20px;
+    -webkit-box-shadow: #868686 0 0px 10px -1px;
+    font: 16px "Comic Sans MS", cursive, sans-serif;
+    color: #008080;
+}
+
+
+
+
+.sign label>span {
+    float: left;
+    margin-top: 10px;
+    
+}
+.sign label {
+    display: block;
+    margin: 0px 0px 5px;
+    padding-left: 20px;
+}
+.sign label>span {
+    float: left;
+    width: 791px;
+    text-align: left;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.sign input[type="text"], .sign input[type="email"], .sign input[type="password"], .sign textarea, .sign select {
+    color: #33CCFF;
+    width: 60%;
+    padding: 5px 4px 0px 5px;
+    padding: 25px;
+    border: 1px solid #CEE2E7;
+    border-radius: 10px;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
+    font: 200 24px/24px Arial, Helvetica, sans-serif;
+     font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.sign textarea{
+    height:100px;
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sign .button{
+    padding-left: 300px;
+    float: center;
+    opacity: 0.7;
+    border: none;
+    color: #008B8B;
+  	font: 16px "Comic Sans MS", cursive, sans-serif;
+    margin-left: .5em;
+    
+}
+.button {
+    padding-left: 10px;
+    color: #00FFFF;
+}
+
+
+
+#ltr1{
+	border-radius: 10px;
+
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	font-family: Verdana;
+	background: rgba(189,255,239,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(189,255,239,1) 0%, rgba(190,255,239,1) 1%, rgba(203,255,242,1) 17%, rgba(237,255,251,1) 57%, rgba(255,255,255,1) 79%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%,  color-stop(0%, rgba(189,255,239,1)), color-stop(1%, rgba(190,255,239,1)), color-stop(17%, rgba(203,255,242,1)), color-stop(57%, rgba(237,255,251,1)), color-stop(79%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(189,255,239,1) 0%, rgba(190,255,239,1) 1%, rgba(203,255,242,1) 17%, rgba(237,255,251,1) 57%, rgba(255,255,255,1) 79%, rgba(255,255,255,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(189,255,239,1) 0%, rgba(190,255,239,1) 1%, rgba(203,255,242,1) 17%, rgba(237,255,251,1) 57%, rgba(255,255,255,1) 79%, rgba(255,255,255,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(189,255,239,1) 0%, rgba(190,255,239,1) 1%, rgba(203,255,242,1) 17%, rgba(237,255,251,1) 57%, rgba(255,255,255,1) 79%, rgba(255,255,255,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(189,255,239,1) 0%, rgba(190,255,239,1) 1%, rgba(203,255,242,1) 17%, rgba(237,255,251,1) 57%, rgba(255,255,255,1) 79%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdffef', endColorstr='#ffffff', GradientType=1 );
+}
+
+.menu {
+	position: relative;
+	float: left;
+}
+
+#main  {
+	width: 933px;
+	margin: 0 auto;
+
+}
+
+
+
+ul#navmenu li {
+	width: 210px;
+	text-align: center;
+	position: relative;
+	float: left;
+}
+
+ul#navmenu a{
+	text-decoration: none;
+	display: block;
+	width: 224px;
+	height: 30px;
+	font-size: 15pt;
+	line-height: 27px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	border: none;
+	border-radius: 20px;
+}
+
+ul#navmenu li:hover > a{
+	background-color: #99feff;
+	
+}
+
+ul#navmenu li:hover a:hover{
+	background-color: #99feff;
+	
+}
+
+ul#navmenu, ul.sub1{
+	list-style-type: none;
+	
+
+}
+
+ul#navmenu ul.sub1{
+	display: none;
+	position: absolute;
+	padding-left: 2px;
+	top: 30px;
+	
+}
+
+ul#navmenu li:hover .sub1 {
+	display: block;
+}
+
+#body{
+	float: center;
+}
+#rblock {
+
+	float: left;
+	width: 791px;
+	height: auto;
+	border: 2px solid 	#00FFFF;
+	border-radius: 10px;
+
+}
+
+.si{
+	float: left;
+}
+
+#mulfa{
+	padding: 5px;
+}
+
+#mblock {
+	float: right;
+	border: 2px solid 	#00FFFF;
+	border-radius: 10px;
+	height: auto;
+	width: 136px;
+}
+
+#footer{
+	float: left;
+	width: 791px;
+	height: 70px;
+	border: 2px solid #00FFFF;
+}
+
+
