@@ -1,23 +1,36 @@
 
-<?php 
-
-    session_start();
-    if(isset($_SESSION['username'])){
-            echo 'Welcome ' . $_SESSION['username'] . '!' . '  <a href="admin.php">Admin</a>' . '  <a href="logout.php">Logout</a>' . $last;
-        } else {
-            header("Location: SignUp.php");
-        }
-
- ?>
 
  <?php
+ session_start();
 $footertext = 'asd';
 setcookie("footer", $footertext, time()+3600);
+
+
+	
+	//$dbhost = "athena01.fhict.local";
+	//$password = "GCBKQ7ecdd";
+	//$dbuser = "dbi302277"; 
+	//$dbname = "dbi302277";
+
+			$dbuser = "root";
+			$dbpassword = "vlad";
+			$dbhost = "localhost"; 
+			$dbname = "blindsnow";
+			$username = $_SESSION['username'];
+
+			$conn = new PDO("mysql:host=$dbhost;dbname=$dbname",$dbuser,$dbpassword);
+			$query = $conn->query("SELECT * FROM users WHERE user = '$username'")->fetch();
+
+			$name = $query['firstName'];
+			$email = $query['email'];
+			$password = $query['password'];
+
+
 ?>
 
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+	
 <head>
 <title>Snow</title>
 <link href="Snowcss.css" type="text/css" rel="stylesheet"/>
@@ -51,10 +64,10 @@ setcookie("footer", $footertext, time()+3600);
 					<ul class="sub1">
 						<li><a href="Adventurecorner.php">Adventure Corner</a></li>
 						<li><a href="Signup.php">Sign Up</a></li>
-						<?php 
-							echo "<li><a href="AdventurecornerPrivate.php">More Adventure</a></li>"
-						 ?>
-					</ul>
+							<?php 
+								echo "<li><a href=\"AdventurecornerPrivate.php\">More Adventure</a></li>";
+							 ?>
+						</ul>
 				</li>
 				<li><a href="Learntoride.php">Learn To Ride</a></li>
 				<li><a href="ContactUs.php">Contact Us</a></li>
@@ -63,33 +76,53 @@ setcookie("footer", $footertext, time()+3600);
 	</div>	
 		<div id="body">
 		<div id="rblock">
-		<div class="texta">
-		<font size="5"  font color="DeepSkyBlue" > <br><b>
-		Welcome to our Adventure Corner!
-		</b><br></font>
-		<font size="4"  font color="CornflowerBlue " > <br><b>
-		This could be your adventure corner also!  Register <a href="SignUp.php">here.</a>
-		</b><br></font>
+		<div class="advtext">
+				<font size="5"  font color="DeepSkyBlue" > <br><b>
+				Welcome to <em>Your</em> Adventure Corner!
+				</b><br></font>
+				<font size="4"  font color="CornflowerBlue " > <br><b>
+				<font color>Start</font>.<font>Share</font>.<font>Remember</font>.Take a moment out of your time to word out any experience you want to share with other winter sports enthusiasts <a href="SignUp.php">here.</a>
+				</b><br></font>
 
-
-		
 		</div>
 		<div class="logout">
-			<?php 
-				 echo 'Welcome ' . $_SESSION['username'] . '!' . '  <a href="admin.php">Admin</a>' . '  <a href="logout.php">Logout</a>' . $last;
-			 ?>
-					<a href="">logout</a>
+				<?php 
+					 echo 'Welcome ' . $_SESSION['username'] . '!' . '<br>  <a href="logout.php">LEAVE BITCH</a>';
+				 ?>
+				 <div class="fo">
+				 <form action="" method="post">		
+				 <br>
+				 
+						<label for='Name' >Name:</label>
+						<input type='password' name='name' id='password' maxlength="40" value="<?php echo $name; ?>" /><br>
 
+						 
+						<label for='email' >Email:</label>
+						<input type='password' name='Email' id='password' maxlength="50" value="<?php echo $email; ?>"/><br>
+
+						<label for='password' >Pass:</label>
+						<input type='password' name='password' id='password' maxlength="50" value="<?php echo $password; ?>"/>&nbsp&nbsp&nbsp&nbsp
+
+
+						<input type='submit' name='edit' value='Edit' />
+
+					</form>
+					</div>
 		</div>		
-		<div class="comment">
-			
-			 <textarea name="commentarea" rows="3" cols="90" placeholder="Leave us a happy comment (:"></textarea>
-			 <input type="hidden" name="userid" value="1">
-			 <input class="button" type="submit" name="comentubtton" value="Submit comment"></input>
-			 
+		<div class="elegant-aero2">
+			<fieldset>
+				 	 <legend>Your opinnion matters!</legend>
+					 <textarea name="commentarea" rows="3" cols="90" placeholder="Leave us a happy comment (:"></textarea>
+					 <input type="hidden" name="userid" value="1">
+				</fieldset>
+				 <input class="button" type="submit" name="comentubtton" value="Submit comment"></input>
+				
+		</div> 
+		<div class="com">
+			<fieldset>
+				<legend>Read.Relate.Enjoy</legend>
+			</fieldset>
 		</div>
-
-
 
 		</div>
 		</div>
@@ -119,3 +152,13 @@ echo $footertext
 </div>
 </body>
 </html>
+<!-- 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("input").click(function () {
+                $(this).hide();
+            });
+        });
+    </script> -->

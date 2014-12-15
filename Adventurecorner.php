@@ -3,7 +3,13 @@ $footertext = 'asd';
 setcookie("footer", $footertext, time()+3600);
 ?>
 
-
+<?php  
+session_start();
+if(isset($_SESSION['username'])){
+    header("Location: AdventurecornerPrivate.php");
+} 
+?>      
+    
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
@@ -55,21 +61,37 @@ setcookie("footer", $footertext, time()+3600);
 		<font size="4"  font color="CornflowerBlue " > <br><b>
 		This could be your adventure corner also!  Register <a href="SignUp.php">here.</a>
 		</b><br></font>
-
-
-		
 		</div>
 		<div class="logout">
-			Welcome -name-!
-					<a href="">logout</a>
+				<fieldset >
+				<legend>Sign In</legend>		
+
+				<form action="AfterLogin.php" method="post">		
+				 
+				<p><label for='username' >UserName:</label>
+				<input type='text' name='username' id='username' maxlength="50" /></p>
+				 
+				<p><label for='password' >Password:</label>
+				<input type='password' name='password' id='password' maxlength="50" /></p>
+
+
+				<input type='submit' name='login' value='Login' />
+
+				</form>
+				 
+				</fieldset>
 
 		</div>		
-		<div class="comment">
-			
-			 <textarea name="commentarea" rows="3" cols="90" placeholder="Leave us a happy comment (:"></textarea>
-			 <input type="hidden" name="userid" value="1">
-			 <input class="button" type="submit" name="comentubtton" value="Submit comment"></input>
-			 
+		<div class="elegant-aero2">
+			<form id="comment2">
+				<fieldset>
+				 	 <legend>Your opinnion matters!</legend>
+					 <textarea name="commentarea" rows="3" cols="90" placeholder="Leave us a happy comment (:"></textarea>
+					 <input type="hidden" name="userid" value="1">
+				</fieldset>
+				 <input class="button" type="submit" name="comentubtton" value="Submit comment"></input>
+				
+			</form>
 		</div>
 
 

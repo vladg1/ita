@@ -26,6 +26,54 @@ padding: auto;
 	padding-left: 60px;
 }
 
+.com{
+	width: 760px;
+	border-radius: 10px;
+}
+
+.elegant-aero2 textarea{
+	border-radius: 10px;
+	color: #008B8B;
+	font: 200 24px/24px ;
+    font: 0.8em sans-serif;
+    width: 700px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+   
+}
+
+
+
+
+.fo{
+	padding-top: 15px;
+	float: left;
+	padding-left: 20px;
+	text-align: left;
+}
+
+.elegant-aero2 {
+		
+	color: #33CCFF;
+    width: 60%;
+    padding: 5px 4px 10px 5px;
+    padding: 25px;
+   
+    border-radius: 10px;
+    background: #;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
+    font: 200 24px/24px ;
+    font: 1em sans-serif;
+    width: 770px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#comment2{
+
+}
 
 .text12{
 	padding-top: 550px; 
@@ -348,6 +396,29 @@ label {
 	border-radius: 10px;
 
 }
+
+.advtext{
+	padding-left: 25px;
+	float: left;
+	font: 12px "Comic Sans MS", cursive, sans-serif;
+   	width: 450px;
+}
+
+.logout{
+	float: right;
+	text-align: right;
+	height: 200px;
+	width: 280px;
+	padding-top: 25px;
+	padding-right: 25px;
+	font: 13px "Comic Sans MS", cursive, sans-serif;
+   
+}
+
+.comment{
+	padding-top: 200px;
+}
+
 
 body{
 	width: 100%;

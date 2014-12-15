@@ -19,39 +19,42 @@ if(isset($_POST['submit'])){
 	$confpass = $_POST['sconfpass'];
 	}
 
-	if (!$password=$confpass) {
-		echo "Password does not match!"
-	}
+	// if (!$password=$confpass) {
+	// 	echo "Password does not match!";
+	// }
 
-	$dbhost = "athena01.fhict.local";
-	$password = "GCBKQ7ecdd";
-	$dbuser = "dbi302277"; 
-	$dbname = "dbi302277";
+	//$dbhost = "athena01.fhict.local";
+	//$password = "GCBKQ7ecdd";
+	//$dbuser = "dbi302277"; 
+	//$dbname = "dbi302277";
+
+	$dbuser = "root";
+	$dbpassword = "vlad";
+	$dbhost = "localhost"; 
+	$dbname = "blindsnow";
 
 
-	$sql = new PDO ("mysql:host=$dbhost;dbname=$dbname",$dbuser,$password);
-	$query = $sql->prepare("INSERT INTO snow_user (FirstName, LastName, User, Email, Password, thenumber) VALUES (:firstname,:lastname,:user,:email,:password)");
+
+	//$count = $query->rowCount();
+
+
+	$sql = new PDO("mysql:host=$dbhost;dbname=$dbname",$dbuser,$dbpassword);
+	$query = $sql->prepare("INSERT INTO users (firstName, lastName, user, email, password) VALUES (:firstname,:lastname,:user,:email,:password);");
 		$query->bindParam(':firstname', $firstname);
 		$query->bindParam(':user', $user);
 		$query->bindParam(':password', $password);
 		$query->bindParam(':lastname', $lastname);
 		$query->bindParam(':email', $email);
-	session_start();
+	
 	if($query->execute())
 	{
-		header("Location: AdventurecornerPrivate.php");
-	
-		$_SESSION['username'] = $user;	
+		session_start();
+		header("Location: Boards.php");
+		$_SESSION['username'] = $user;
+	} else {
+		echo "there was an error!";
 	}
-	else {
-			echo "there was an error!";
-
-		}
-
-
-	
 }
 //header("Location: Snow.php");
 //exit;
-
 ?>
